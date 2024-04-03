@@ -24,10 +24,9 @@ const repos = computed(
     <p>Projekteliste</p>
     <section v-if="pending">Loading....</section>
     <section v-else-if="error">Ein Fehler ist aufgetreten.</section>
-    <section v-else="data">
+    <section v-else>
       <ul class="grid grid-cols-1 gap-4 my-4">
-        <li v-for="repo in repos" :key="repo.id"
-            class="border border-gray-300 rounded-lg p-4 hover:bg-gray-300 font-mono">
+        <li v-for="repo in repos" :key="repo.id">
           <a :href="repo.html_url" target="_blank">
             <div class="flex items-center justify-between">
               <div class="font-semibold">{{ repo.name }}</div>
@@ -44,5 +43,7 @@ const repos = computed(
 </template>
 
 <style scoped>
-
+li {
+  @apply border border-gray-300 rounded-lg p-4 hover:bg-gray-300 font-mono dark:hover:bg-gray-700
+}
 </style>

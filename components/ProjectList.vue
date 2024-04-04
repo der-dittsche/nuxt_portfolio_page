@@ -12,8 +12,8 @@ const formatDate = (dateString: string) => {
 const repos = computed(
     () => data.value.filter(repo => repo.description)
         .sort((a, b) => {
-          let dateA:any = new Date(b.updated_at);
-          let dateB:any = new Date(a.updated_at);
+          let dateA:any = new Date(b.created_at);
+          let dateB:any = new Date(a.created_at);
           return dateA - dateB;
         })
 )

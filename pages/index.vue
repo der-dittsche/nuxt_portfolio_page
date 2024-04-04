@@ -1,17 +1,11 @@
 <script setup lang="ts">
-useHead({
-  title: 'Home',
-  meta: [{
-    name: 'description',
-    content: 'Der CSC Köln stellt sich vor'
-  }]
-})
+
 </script>
 
 <template>
-  <div class="container">
-    <h1>Hallo Welt</h1>
-  </div>
+<article class="prose dark:prose-invert prose-h1:text-2xl max-w-none">
+  <ContentDoc path="/about"/>
+</article>
 </template>
 
 <style scoped>

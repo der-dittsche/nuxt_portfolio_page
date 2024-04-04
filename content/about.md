@@ -10,13 +10,13 @@ head:
     - name: 'copyright'
       content: '© 2024 der-dittsche'
 ---
-# Hello There, I'm Sascha
+### Hello There, I'm Sascha
 
-## About me
+#### About me
 
-I'm Sascha, I'm a developer. I'm 36, living in middle of Germany.
+I'm Sascha, I'm a web developer. I'm 36, living in middle of Germany.
 
-## What my tech skills
+#### What my tech skills
 
 I mostly develop web apps on:
 
@@ -24,11 +24,11 @@ I mostly develop web apps on:
 - Laravel & Vue & Inertia (PHP framework/JavaScript frontend framework)
 - Node.js
 
-My dev languages I prefer
+#### Dev languages I prefer
 
 - HTML/CSS/JS/PHP/SQL
 
-My favorite tooling
+#### My favorite tooling
 
 - VueJs / Nuxt / Tailwind / Bootstrap
 

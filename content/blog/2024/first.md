@@ -12,13 +12,13 @@ head:
 publishedAt: 2024-04-03 12:00:00
 ---
 
-# First post on our website
+## A bit of Markdown Example
 
-## Introduction
+### Introduction
 
 This is some text. *This is italic*.
 
-## Second Part
+### Second Part
 
 Something more. **This is bold**.
 
@@ -37,18 +37,28 @@ Numbered lists:
 Todo list:
 
 - [ ] Buy groceries
-- [ ] Pay bills
+- [X] Pay bills
 
 Tables:
 | Name | Surname |
 |--|--|
-| Piotr | Jura |
+| Sascha | Dietrich |
+| Max | Mustermann |
 
 ```html
-
-<html>
-<div>Hello!</div>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>Hello!</div>
+</body>
 </html>
 ```
 
-[Go to the second article](/blog/second)
+[Go back](/blog/)

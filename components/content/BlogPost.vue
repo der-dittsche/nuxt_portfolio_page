@@ -20,8 +20,8 @@ const posts = computed(() => {
   for (const post of data.value) {
     const year = new Date(post.publishedAt).getFullYear()
 
-    const displayYear = year !== lastYear
-
+    let displayYear: boolean;
+    displayYear = year !== lastYear;
     post.displayYear = displayYear
     post.year = year
     result.push(post)
@@ -32,7 +32,6 @@ const posts = computed(() => {
 </script>
 
 <template>
-
   <section class="not-prose">
     <div class="column">
       <div>Datum</div>
@@ -45,7 +44,6 @@ const posts = computed(() => {
             :to="item._path">
           <div :class="{'invisible': !item.displayYear }">{{ item.year }}</div>
           <div class="pl-4">{{ item.title }}</div>
-
         </NuxtLink>
       </li>
     </ul>

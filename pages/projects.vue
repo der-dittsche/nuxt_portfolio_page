@@ -1,13 +1,11 @@
 <script setup lang="ts">
 
-import ProjectList from "~/components/ProjectList.vue";
 </script>
 
 <template>
-<div>
-  <h1 class="text-xl mb-2.5">Projekte</h1>
-  <ProjectList />
-</div>
+  <article class="prose dark:prose-invert max-w-none">
+    <ContentDoc path="/projects"/>
+  </article>
 </template>
 
 <style scoped>

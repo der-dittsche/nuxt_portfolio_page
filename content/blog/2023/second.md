@@ -27,3 +27,5 @@ const app = createApp({
 })
 app.mount('#app')
 ```
+
+[Go back](/blog/)

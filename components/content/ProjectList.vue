@@ -12,16 +12,15 @@ const formatDate = (dateString: string) => {
 const repos = computed(
     () => data.value.filter(repo => repo.description)
         .sort((a, b) => {
-          let dateA:any = new Date(b.created_at);
-          let dateB:any = new Date(a.created_at);
+          let dateA: any = new Date(b.created_at);
+          let dateB: any = new Date(a.created_at);
           return dateA - dateB;
         })
 )
 </script>
 
 <template>
-  <div>
-    <p>Projekteliste</p>
+  <div class="not-prose">
     <section v-if="pending">Loading....</section>
     <section v-else-if="error">Ein Fehler ist aufgetreten.</section>
     <section v-else>

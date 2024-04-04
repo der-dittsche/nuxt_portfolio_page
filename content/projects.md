@@ -1,6 +1,6 @@
 ---
-title: 'Mein Blog'
-description: 'Ein Blog über das, was ich so tu'
+title: 'Projekte'
+description: 'Übersicht meiner Projekte auf Github'
 head:
   meta:
     - name: 'keywords'
@@ -10,6 +10,8 @@ head:
     - name: 'copyright'
       content: '© 2024 der-dittsche'
 ---
-### Mein Blog
+### Meine Projekte
 
-::BlogPost
+Hier eine Übersicht meiner bisherigen Projekte auf github
+
+::ProjectList

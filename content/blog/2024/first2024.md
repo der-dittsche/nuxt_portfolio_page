@@ -12,4 +12,6 @@ head:
 publishedAt: 2024-04-04 12:00:00
 ---
 
-### Projects in 2024
+## Projects in 2024
+
+[Go back](/blog/)

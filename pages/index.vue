@@ -4,7 +4,7 @@
 
 <template>
   <article class="prose dark:prose-invert max-w-none">
-    <ContentDoc path="/about"/>
+    <ContentDoc path="/" />
   </article>
 </template>
 

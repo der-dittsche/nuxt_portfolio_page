@@ -2,11 +2,7 @@ import tailwindTypography from '@tailwindcss/typography'
 
 export default defineNuxtConfig({
     devtools: {enabled: true},
-    modules: [
-        "@nuxtjs/tailwindcss",
-        "@nuxtjs/color-mode",
-        "@nuxt/content"
-    ],
+    modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "@nuxt/content", '@nuxtjs/sitemap'],
     tailwindcss: {
         configPath: 'tailwind.config',
         config: {
@@ -26,4 +22,7 @@ export default defineNuxtConfig({
             }
         }
     },
+    app: {
+        pageTransition: { name: 'page', mode: 'out-in' }
+    }
 });

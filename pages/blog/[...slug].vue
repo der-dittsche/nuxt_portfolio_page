@@ -1,7 +1,9 @@
 <script setup lang="ts">
 const activeId = ref(null)
+
 onMounted(() => {
-  const callback = (entries: any) => {
+  let elements:any = []
+  const callback = (entries:any) => {
     for (const entry of entries) {
       if (entry.isIntersecting) {
         activeId.value = entry.target.id
@@ -13,10 +15,15 @@ onMounted(() => {
     root: null,
     threshold: 0.5
   })
-  const elements = document.querySelectorAll('h2, h3')
-  for (const element of elements) {
-    observer.observe(element)
-  }
+
+  setTimeout(() => {
+    elements = document.querySelectorAll('h2, h3')
+
+    for (const element of elements) {
+      observer.observe(element)
+    }
+  }, 150)
+
   onBeforeUnmount(() => {
     for (const element of elements) {
       observer.unobserve(element)

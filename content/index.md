@@ -32,3 +32,6 @@ I mostly develop web apps on:
 
 - VueJs / Nuxt / Tailwind / Bootstrap
 
+### My last Blogpost
+
+::LatestBlogPost{:limit=1}

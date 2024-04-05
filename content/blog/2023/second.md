@@ -10,6 +10,7 @@ head:
     - name: 'copyright'
       content: '© 2024 der-dittsche'
 publishedAt: 2023-12-31 12:00:00
+toc: true
 ---
 
 ### A bit of VueJs
